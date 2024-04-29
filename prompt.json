@@ -1,0 +1,15 @@
+{
+    "name": null,
+    "input_variables": [
+        "input"
+    ],
+    "input_types": {},
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "\nYou are helpful assistant that analyses input string\nyou analyze its category \nFormat output as Json With the keys \nCategory: What category the input is?\nExamples: List of strings that are examples for the Category\n\n\ninputstring: {input}\n\nsamples: for input apple, category is brand and other examples are Google,Samsung \n            and for apple category is chosen as brand over fruit because we priorite\n            business, products and things over generic catogorization\n         if we get a device or product name has animal name we categorize it to\n         product only\n         for input tamil, category is spoken language and other examples are hindi,telugu\n         instead of giving category as language we gave spoken language because\n         we want to be contextually accurate\n",
+    "template_format": "f-string",
+    "validate_template": false,
+    "_type": "prompt"
+}
